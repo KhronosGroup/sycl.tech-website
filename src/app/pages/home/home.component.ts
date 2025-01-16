@@ -17,7 +17,7 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { CommonModule, NgOptimizedImage } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, Signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy, Signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NewsModel } from '../../shared/models/news.model';
 import { NewsService } from '../../shared/services/models/news.service';
@@ -83,7 +83,7 @@ import { AlertService } from '../../shared/services/alert.service';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomeComponent implements SearchablePage, OnInit, OnDestroy {
+export class HomeComponent implements SearchablePage, OnDestroy {
   protected readonly news: Signal<NewsModel[]>;
   protected readonly contributors: Signal<ContributorModel[]>;
   protected readonly communityUpdates: Signal<ImplementationActivityModel[]>;
@@ -168,20 +168,6 @@ export class HomeComponent implements SearchablePage, OnInit, OnDestroy {
 
     this.researchCount = toSignal(
       this.researchService.count(), { initialValue: 0 });
-  }
-
-  /**
-   * @inheritdoc
-   */
-  ngOnInit() {
-    this.alertService.add({
-      id: 'home-whats-changed',
-      icon: 'update',
-      title: 'Show me what has changed!',
-      description: 'Click here to see our new videos, news, projects and research papers, since your last visit.',
-      href: './changed',
-      persistent: true
-    });
   }
 
   /**
