@@ -1,13 +1,18 @@
 :host {
-  width: 26px;
-  height: 26px;
+  --st-icon-src: '';
 
-  display: flex;
+  display: inline-flex;
+  width: auto;
+  height: auto;
   align-items: center;
   justify-content: center;
+  background-color: currentColor;
+  mask: var(--st-icon-src) no-repeat center / contain !important;
+  background-size: contain;
 
   img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    opacity: 0;
   }
 }

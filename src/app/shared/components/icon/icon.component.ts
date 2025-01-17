@@ -16,7 +16,16 @@
  *
  *--------------------------------------------------------------------------------------------*/
 
-import { ChangeDetectionStrategy, Component, computed, input, Signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  effect,
+  HostBinding,
+  input,
+  OnInit,
+  Signal
+} from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -29,7 +38,7 @@ import { NgOptimizedImage } from '@angular/common';
   styleUrl: './icon.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class IconComponent {
+export class IconComponent implements OnInit {
   readonly icon = input.required<string>();
   readonly alt: Signal<string> = input<string>('Icon');
   readonly width = input<number>(26);
@@ -37,12 +46,21 @@ export class IconComponent {
 
   readonly iconSrc: Signal<string>;
 
+  @HostBinding('style.--st-icon-src')
+  protected backgroundImageSrc: string = ''
+
   /**
    * Constructor.
    */
   constructor() {
-    this.iconSrc = computed(() => {
-      return `./assets/icons/${this.icon()}.svg`;
-    });
+    this.iconSrc = computed(() =>
+      `./assets/icons/${this.icon()}.svg`);
+  }
+
+  /**
+   * @inheritdoc
+   */
+  ngOnInit() {
+    this.backgroundImageSrc = `url('./assets/icons/${this.icon()}.svg')`;
   }
 }

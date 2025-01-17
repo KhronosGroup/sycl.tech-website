@@ -29,6 +29,7 @@ import { LoadingState } from '../../../../shared/LoadingState';
 import { EventModel } from '../../../../shared/models/event.model';
 import { EventViewerPopupComponent } from './event-viewer-popup/event-viewer-popup.component';
 import { map, Observable, tap } from 'rxjs';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-event-calendar',
@@ -37,6 +38,7 @@ import { map, Observable, tap } from 'rxjs';
     CommonModule,
     TruncatePipe,
     LoadingComponent,
+    IconComponent,
   ],
   templateUrl: './event-calendar.component.html',
   styleUrl: './event-calendar.component.scss',

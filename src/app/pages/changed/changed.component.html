@@ -12,7 +12,7 @@
             <h3>{{ startDate() | date: 'mediumDate' }}</h3>
           </div>
           <div class="sep">
-            <span class="material-symbols-outlined panel-icon">arrow_circle_right</span>
+            <st-icon icon="arrow_circle_right" class="panel-icon"></st-icon>
           </div>
           <div class="date">
             <h2>Today</h2>
@@ -25,7 +25,7 @@
       </header>
     </div>
     <div>
-      <span class="material-symbols-outlined panel-icon">update</span>
+      <st-icon icon="update" class="panel-icon"></st-icon>
     </div>
   </div>
 </section>
@@ -46,7 +46,7 @@
           <div>
             @if (updatedNews().length > 0) {
               <a class="button" routerLink="./news">
-                <span class="material-symbols-outlined">newspaper</span>View All</a>
+                <st-icon icon="newspaper"></st-icon>View All</a>
             }
           </div>
         </header>
@@ -78,7 +78,7 @@
           <div>
             @if (updatedEvents().length > 0) {
               <a class="button" routerLink="./calendar">
-                <span class="material-symbols-outlined">calendar</span>View All</a>
+                <st-icon icon="calendar"></st-icon>View All</a>
             }
           </div>
         </header>
@@ -110,7 +110,7 @@
           <div>
             @if (updatedProjects().length > 0) {
               <a class="button" routerLink="../ecosystem/projects">
-                <span class="material-symbols-outlined">genetics</span>View All</a>
+                <st-icon icon="genetics"></st-icon>View All</a>
             }
           </div>
         </header>
@@ -142,7 +142,7 @@
           <div>
             @if (updatedVideos().length > 0) {
               <a class="button" routerLink="../ecosystem/presentations">
-                <span class="material-symbols-outlined">slideshow</span>View All</a>
+                <st-icon icon="slideshow"></st-icon>View All</a>
             }
           </div>
         </header>
@@ -174,7 +174,7 @@
           <div>
             @if (updatedResearch().length > 0) {
               <a class="button" routerLink="../ecosystem/research">
-                <span class="material-symbols-outlined">biotech</span>View All</a>
+                <st-icon icon="biotech"></st-icon>View All</a>
             }
           </div>
         </header>

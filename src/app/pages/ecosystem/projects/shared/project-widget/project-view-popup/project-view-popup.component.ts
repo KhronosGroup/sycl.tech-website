@@ -36,6 +36,7 @@ import {
 } from '../../../../../../shared/components/contributor-avatar/contributor-avatar.component';
 import { MultiDateComponent } from '../../../../../../shared/components/multi-date/multi-date.component';
 import { FilterManager, UITagGroup } from '../../../../../../shared/components/filter-result-layout/FilterManager';
+import { IconComponent } from '../../../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-project-view-popup',
@@ -51,7 +52,8 @@ import { FilterManager, UITagGroup } from '../../../../../../shared/components/f
     CopyInputComponent,
     AsyncPipe,
     ContributorAvatarComponent,
-    MultiDateComponent
+    MultiDateComponent,
+    IconComponent
   ],
   styleUrls: [
     '../../../../../getting-started/academy/lesson/lesson-content-styling.scss',

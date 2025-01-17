@@ -26,6 +26,7 @@ import { LoadingState } from '../../../LoadingState';
 import { ToggleButton } from '../../toggle/toggle.component';
 import { ShowMoreComponent } from '../../show-more/show-more.component';
 import { UIFilter } from '../FilterManager';
+import { IconComponent } from '../../icon/icon.component';
 
 @Component({
   selector: 'st-filter-container',
@@ -36,7 +37,8 @@ import { UIFilter } from '../FilterManager';
     SideBarComponent,
     HeaderComponent,
     LoadingComponent,
-    ShowMoreComponent
+    ShowMoreComponent,
+    IconComponent
   ],
   templateUrl: './container.component.html',
   styleUrl: './container.component.scss'

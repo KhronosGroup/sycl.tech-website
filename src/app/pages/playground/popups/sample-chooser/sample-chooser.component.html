@@ -1,17 +1,17 @@
 <header>
   <div>
-    <h1><span class="material-symbols-outlined popup-icon">category</span>Choose a Sample</h1>
+    <h1><st-icon icon="category" class="popup-icon"></st-icon>Choose a Sample</h1>
   </div>
   <div>
     <a class="button" [href]="environment.github_content_repo_collection_base_url + '/playground_samples/'"
        target="_blank" rel="noopener">
-      <span class="material-symbols-outlined">add</span>Contribute a Sample</a>
+      <st-icon icon="add"></st-icon>Contribute a Sample</a>
   </div>
 </header>
 
 <main class="samples">
   <div class="new" (click)="onChooseNew()">
-    <span class="material-symbols-outlined">add_circle</span>New
+    <st-icon icon="add_circle"></st-icon>New
   </div>
 
   @if (state() === LoadingState.LOAD_SUCCESS) {

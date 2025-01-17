@@ -30,6 +30,7 @@ import { PlatformService } from '../../services/platform.service';
 import { SafeStorageService } from '../../services/safe-storage.service';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-alerts',
@@ -38,6 +39,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     RouterLink,
     CommonModule,
+    IconComponent,
   ],
   styleUrl: './alerts.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -19,6 +19,7 @@
 import { ChangeDetectionStrategy, Component, model, signal, WritableSignal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ClipboardService } from 'ngx-clipboard';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-copy-input',
@@ -26,7 +27,8 @@ import { ClipboardService } from 'ngx-clipboard';
   templateUrl: './copy-input.component.html',
   styleUrl: './copy-input.component.scss',
   imports: [
-    FormsModule
+    FormsModule,
+    IconComponent
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

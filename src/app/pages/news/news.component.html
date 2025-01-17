@@ -13,7 +13,7 @@
       <div>
         <a class="button" [href]="environment.github_content_repo_collection_base_url + '/news/'"
            target="_blank" rel="noopener">
-          <span class="material-symbols-outlined">add</span>Contribute News</a>
+          <st-icon icon="add"></st-icon>Contribute News</a>
       </div>
       <div>
         <st-toggle
@@ -47,8 +47,7 @@
           </div>
           <div>
             <div class="vips">
-              <span class="material-symbols-outlined"
-                    title="VIPs in the SYCL World">star_rate</span>
+              <st-icon icon="star_rate" title="VIPs in the SYCL World"></st-icon>
               @for (vip of vips | async; track vip) {
                 <st-contributor-avatar
                     [contributor]="vip"
@@ -60,7 +59,7 @@
       } @else {
         <div class="notice">
           <div>
-            <span class="material-symbols-outlined">search_off</span>
+            <st-icon icon="search_off"></st-icon>
             No Results
           </div>
         </div>

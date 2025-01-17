@@ -20,12 +20,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { environment } from '../../../environments/environment';
 import { Title } from '@angular/platform-browser';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-privacy',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    IconComponent
   ],
   templateUrl: './privacy.component.html',
   styleUrl: './privacy.component.scss',

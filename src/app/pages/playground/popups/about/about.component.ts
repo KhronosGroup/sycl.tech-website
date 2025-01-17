@@ -18,13 +18,15 @@
 
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-sample-chooser',
   standalone: true,
   templateUrl: './about.component.html',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    IconComponent
   ],
   styleUrls: [
     '../../../../shared/components/popup/layouts/large-top-header.scss',

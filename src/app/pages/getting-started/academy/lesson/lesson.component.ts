@@ -32,6 +32,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { TabComponent } from '../../../../shared/components/tabs/tab/tab.component';
 import { TabsComponent } from '../../../../shared/components/tabs/tabs.component';
 import { SafeStorageService } from '../../../../shared/services/safe-storage.service';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-lesson',
@@ -44,7 +45,8 @@ import { SafeStorageService } from '../../../../shared/services/safe-storage.ser
     MonacoEditorModule,
     NgOptimizedImage,
     TabComponent,
-    TabsComponent
+    TabsComponent,
+    IconComponent
   ],
   templateUrl: './lesson.component.html',
   styleUrls: [

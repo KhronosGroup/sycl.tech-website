@@ -8,47 +8,46 @@
         @if (isCompiling()) {
           <st-loading></st-loading>
         } @else {
-          <span class="material-symbols-outlined run"
-                title="Compile and run your source code">play_circle</span>
+          <st-icon icon="play_circle" class="run" title="Compile and run your source code"></st-icon>
         }
       </a>
       <a (click)="onShareSample()" title="Share this code with someone else via a sharable link">
-        <span class="material-symbols-outlined">share</span></a>
+        <st-icon icon="share"></st-icon></a>
 
       <a (click)="onSaveLoadSample()" title="Save or load this code to browser storage">
-        <span class="material-symbols-outlined">save</span></a>
+        <st-icon icon="save"></st-icon></a>
 
       <a (click)="onChooseSample()" title="Show the sample chooser">
-        <span class="material-symbols-outlined">category</span></a>
+        <st-icon icon="category"></st-icon></a>
 
       <a (click)="onChooseCompiler()" title="Change the SYCL compiler">
-        <span class="material-symbols-outlined">settings</span></a>
+        <st-icon icon="settings"></st-icon></a>
 
       @if (fullscreenMode()) {
         <a (click)="onToggleFullscreen()" title="Exit fullscreen mode">
-          <span class="material-symbols-outlined">fullscreen_exit</span></a>
+          <st-icon icon="fullscreen_exit"></st-icon></a>
       } @else {
         <a (click)="onToggleFullscreen()" title="Enter fullscreen mode">
-          <span class="material-symbols-outlined">fullscreen</span></a>
+          <st-icon icon="fullscreen"></st-icon></a>
       }
 
       @if (!isPanelVisible('source') && !this.isAnyPanelMaximized()) {
         <a (click)="this.sourcePanelViewState.set(PanelViewState.NORMAL)" title="Show the Source Code panel">
-          <span class="material-symbols-outlined">code</span></a>
+          <st-icon icon="code"></st-icon></a>
       }
       @if (!isPanelVisible('asm') && !this.isAnyPanelMaximized()) {
         <a (click)="this.asmPanelViewState.set(PanelViewState.NORMAL)"
            title="Show the Assembly Output panel">
-          <span class="material-symbols-outlined">code_blocks</span></a>
+          <st-icon icon="code_blocks"></st-icon></a>
       }
       @if (!isPanelVisible('exec') && !this.isAnyPanelMaximized()) {
         <a (click)="this.execPanelViewState.set(PanelViewState.NORMAL)" title="Show the Execution Output panel">
-          <span class="material-symbols-outlined">terminal</span></a>
+          <st-icon icon="terminal"></st-icon></a>
       }
     </div>
     <div>
       <a (click)="onShowInfoPanel()" title="Show the about popup">
-        <span class="material-symbols-outlined">info</span></a>
+        <st-icon icon="info"></st-icon></a>
     </div>
   </div>
   <div class="container">

@@ -31,6 +31,7 @@ import { LoadingState } from '../../../../shared/LoadingState';
 import { LoadingComponent } from '../../../../shared/components/loading/loading.component';
 import { catchError, of, take, tap } from 'rxjs';
 import { CopyInputComponent } from '../../../../shared/components/copy-input/copy-input.component';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-share-popup',
@@ -42,7 +43,8 @@ import { CopyInputComponent } from '../../../../shared/components/copy-input/cop
   ],
   imports: [
     LoadingComponent,
-    CopyInputComponent
+    CopyInputComponent,
+    IconComponent
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

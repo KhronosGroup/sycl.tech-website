@@ -24,9 +24,9 @@
       &:nth-of-type(1) {
         flex: 1;
 
-        span.popup-icon {
+        .popup-icon {
           margin-right: .5rem;
-          font-size: 40px;
+          width: 40px;
           vertical-align: middle;
         }
       }

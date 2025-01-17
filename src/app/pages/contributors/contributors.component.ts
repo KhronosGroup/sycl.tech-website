@@ -24,6 +24,7 @@ import { RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-contributors',
@@ -32,6 +33,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
     CommonModule,
     ContributorAvatarComponent,
     RouterLink,
+    IconComponent,
   ],
   templateUrl: './contributors.component.html',
   styleUrl: './contributors.component.scss',

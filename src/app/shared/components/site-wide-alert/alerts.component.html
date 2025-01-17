@@ -2,7 +2,7 @@
   <div class="container" [@slideInSide]>
     <a class="content" [routerLink]="alert.href" (click)="onAlertClicked(alert)">
       <div class="icon">
-        <span class="material-symbols-outlined">{{ alert.icon }}</span>
+        <st-icon [icon]="alert.icon"></st-icon>
       </div>
       <div class="messages">
         <h1 [innerHTML]="alert.title"></h1>
@@ -14,7 +14,7 @@
     </a>
     <div class="buttons">
       <a class="block" title="Don't show this alert ever again" (click)="onBlockAlert(alert)">
-        <span class="material-symbols-outlined">block</span>
+        <st-icon icon="block"></st-icon>
       </a>
     </div>
   </div>

@@ -21,6 +21,7 @@ import { Component, input, model, signal, WritableSignal } from '@angular/core';
 import { SearchComponent } from '../../search/search.component';
 import { TagComponent } from '../../tag/tag.component';
 import { UIFilter, UISearchFilter, UITagGroup } from '../FilterManager';
+import { IconComponent } from '../../icon/icon.component';
 
 @Component({
   selector: 'st-filter-side-bar',
@@ -28,7 +29,8 @@ import { UIFilter, UISearchFilter, UITagGroup } from '../FilterManager';
   imports: [
     CommonModule,
     SearchComponent,
-    TagComponent
+    TagComponent,
+    IconComponent
   ],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.scss'

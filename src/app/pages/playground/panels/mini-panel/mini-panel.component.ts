@@ -19,6 +19,7 @@
 import { ChangeDetectionStrategy, Component, input, model, output } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { LoadingComponent } from '../../../../shared/components/loading/loading.component';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-mini-panel',
@@ -26,7 +27,8 @@ import { LoadingComponent } from '../../../../shared/components/loading/loading.
   imports: [
     CommonModule,
     LoadingComponent,
-    NgOptimizedImage
+    NgOptimizedImage,
+    IconComponent
   ],
   templateUrl: './mini-panel.component.html',
   styleUrl: './mini-panel.component.scss',

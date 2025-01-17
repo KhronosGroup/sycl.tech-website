@@ -30,6 +30,7 @@ import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { PopupReference } from '../../../../shared/components/popup/popup.service';
 import { RouterLink } from '@angular/router';
 import { PlaygroundCompiler, PlaygroundService } from '../../../../shared/services/models/playground.service';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-compiler-selector',
@@ -43,7 +44,8 @@ import { PlaygroundCompiler, PlaygroundService } from '../../../../shared/servic
     LoadingComponent,
     DatePipe,
     RouterLink,
-    NgOptimizedImage
+    NgOptimizedImage,
+    IconComponent
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

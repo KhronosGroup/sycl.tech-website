@@ -25,12 +25,14 @@ import { ActivatedRoute } from '@angular/router';
 import { EventCalendarComponent } from './shared/event-calendar/event-calendar.component';
 import { HttpParams } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-events',
   standalone: true,
   imports: [
-    EventCalendarComponent
+    EventCalendarComponent,
+    IconComponent
   ],
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.scss',

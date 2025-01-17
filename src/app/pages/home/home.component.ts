@@ -57,6 +57,7 @@ import { CalenderWidgetComponent } from '../calendar/shared/calendar-item-widget
 import { environment } from '../../../environments/environment';
 import { AlertsComponent } from '../../shared/components/site-wide-alert/alerts.component';
 import { AlertService } from '../../shared/services/alert.service';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-home',
@@ -75,6 +76,7 @@ import { AlertService } from '../../shared/services/alert.service';
     CalenderWidgetComponent,
     NgOptimizedImage,
     AlertsComponent,
+    IconComponent,
   ],
   templateUrl: './home.component.html',
   styleUrls: [

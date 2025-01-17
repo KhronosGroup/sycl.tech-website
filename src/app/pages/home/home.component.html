@@ -29,7 +29,7 @@
     <a class="panel sub-panel khronos faded-bg" href="https://www.khronos.org/sycl/" target="_blank" rel="noopener">
       <div class="bg"></div>
       <header>
-        <span class="material-symbols-outlined">cloud_download</span>
+        <st-icon icon="cloud_download"></st-icon>
         <img ngSrc="./assets/images/home/khronos-logo.svg" alt="Khronos Group Logo" height="34.84" width="200"/>
         <h2>The SYCL standard is defined by the Khronos Group, the open member-driven consortium that manages a
           wide range of royalty free open standards. Learn more and get involved. </h2>
@@ -47,9 +47,9 @@
       </div>
       <div>
         <a class="button" routerLink="./changed">
-          <span class="material-symbols-outlined">update</span>What's Changed?</a>
+          <st-icon icon="update"></st-icon>What's Changed?</a>
         <a class="button" routerLink="./news">
-          <span class="material-symbols-outlined">newspaper</span>View All</a>
+          <st-icon icon="newspaper"></st-icon>View All</a>
       </div>
     </header>
 
@@ -82,9 +82,9 @@
            rel="noopener">
           <div>
             @if (communityUpdate.type == CommunityUpdateModelType.COMMIT) {
-              <span class="material-symbols-outlined">commit</span>
+              <st-icon icon="commit"></st-icon>
             } @else if (communityUpdate.type == CommunityUpdateModelType.RELEASE) {
-              <span class="material-symbols-outlined">package</span>
+              <st-icon icon="package"></st-icon>
             }
           </div>
           <div>
@@ -115,10 +115,10 @@
         <div>
           <div>
             <a class="button" routerLink="./calendar">
-              <span class="material-symbols-outlined">event</span>Calendar</a>
+              <st-icon icon="event"></st-icon>Calendar</a>
             <a class="button" [href]="environment.github_content_repo_collection_base_url + '/events/'" target="_blank"
                rel="noopener">
-              <span class="material-symbols-outlined">add</span>Add Your Event</a>
+              <st-icon icon="add"></st-icon>Add Your Event</a>
           </div>
         </div>
       </header>
@@ -140,7 +140,7 @@
       </div>
       <div>
         <a class="button" routerLink="./ecosystem/projects">
-          <span class="material-symbols-outlined">forest</span>
+          <st-icon icon="forest"></st-icon>
           Ecosystem</a>
       </div>
     </header>

@@ -20,6 +20,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { SearchablePage } from '../../../shared/components/site-wide-search/SearchablePage';
 import { NgOptimizedImage } from '@angular/common';
+import { IconComponent } from '../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-implementations',
@@ -27,7 +28,8 @@ import { NgOptimizedImage } from '@angular/common';
   templateUrl: './implementations.component.html',
   styleUrl: './implementations.component.scss',
   imports: [
-    NgOptimizedImage
+    NgOptimizedImage,
+    IconComponent
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

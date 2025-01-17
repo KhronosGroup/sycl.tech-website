@@ -38,9 +38,9 @@
           @if (result.thumbnail) {
             <img [ngSrc]="result.thumbnail" alt="Thumbnail" fill/>
           } @else if (result.icon) {
-            <span class="material-symbols-outlined">{{ result.icon }}</span>
+            <st-icon [icon]="result.icon"></st-icon>
           } @else {
-            <span class="material-symbols-outlined">layers</span>
+            <st-icon icon="layers"></st-icon>
           }
         </div>
         <div>
@@ -63,14 +63,14 @@
   } @else if (state() == SearchState.LOADED_NO_RESULTS) {
     <div class="notice">
       <div>
-        <span class="material-symbols-outlined">search_off</span>
+        <st-icon icon="search_off"></st-icon>
         No Results
       </div>
     </div>
   } @else if (state() == SearchState.READY) {
     <div class="notice">
       <div>
-        <span class="material-symbols-outlined">search</span>
+        <st-icon icon="search"></st-icon>
         Type to Search
       </div>
     </div>

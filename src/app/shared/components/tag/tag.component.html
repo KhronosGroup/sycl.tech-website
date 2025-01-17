@@ -1,9 +1,9 @@
 <div [ngClass]="{'selected': selected(), 'disable-selection': !allowSelection()}" (click)="onClick()">
   <div class="indicator">
     @if (selected()) {
-      <span class="material-symbols-outlined">check</span>
+      <st-icon icon="check"></st-icon>
     } @else {
-      <span class="material-symbols-outlined">close</span>
+      <st-icon icon="close"></st-icon>
     }
   </div>
   <div class="content">

@@ -37,6 +37,7 @@ import { SearchablePage } from '../../shared/components/site-wide-search/Searcha
 import { toSignal } from '@angular/core/rxjs-interop';
 import { TabComponent } from '../../shared/components/tabs/tab/tab.component';
 import { TabsComponent } from '../../shared/components/tabs/tabs.component';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-getting-started',
@@ -50,6 +51,7 @@ import { TabsComponent } from '../../shared/components/tabs/tabs.component';
     NgOptimizedImage,
     TabComponent,
     TabsComponent,
+    IconComponent,
   ],
   templateUrl: './getting-started.component.html',
   styleUrl: './getting-started.component.scss',

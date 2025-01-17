@@ -14,7 +14,7 @@
         </div>
         <div>
           @if (project.repository && project.repository.stars) {
-            {{ project.repository.stars }} <span class="material-symbols-outlined">star</span>
+            {{ project.repository.stars }} <st-icon icon="star"></st-icon>
           }
         </div>
       </div>
@@ -31,15 +31,15 @@
       <!-- Footer -->
       <div class="footer">
         <a [href]="project.url" target="_blank" rel="noopener">
-          <span class="material-symbols-outlined">cloud_download</span>Repository</a>
+          <st-icon icon="cloud_download"></st-icon>Repository</a>
         @if (project.repository?.cloneUrl) {
           <div class="clone"
              (click)="onProjectCloneClicked(project)"
              [ngClass]="{'copied': this.cloneUrlCopied()}">
             @if (!cloneUrlCopied()) {
-              <span class="material-symbols-outlined">content_copy</span>Clone
+              <st-icon icon="content_copy"></st-icon>Clone
             } @else {
-              <span class="material-symbols-outlined">check_circle</span>In Clipboard
+              <st-icon icon="check_circle"></st-icon>In Clipboard
             }
           </div>
         }
@@ -69,9 +69,9 @@
              (click)="onProjectCloneClicked(project)"
              [ngClass]="{'copied': this.cloneUrlCopied()}">
             @if (!cloneUrlCopied()) {
-              <span class="material-symbols-outlined">content_copy</span>Clone
+              <st-icon icon="content_copy"></st-icon>Clone
             } @else {
-              <span class="material-symbols-outlined">check_circle</span>In Clipboard
+              <st-icon icon="check_circle"></st-icon>In Clipboard
             }
           </div>
         }

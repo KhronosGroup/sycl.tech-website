@@ -35,6 +35,7 @@ import { CompilationResultModel } from '../../../../shared/models/compilation-re
 import { PlaygroundSampleModel } from '../../../../shared/models/playground-sample.model';
 import { Router, RouterLink } from '@angular/router';
 import { delay, of, take, tap } from 'rxjs';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-mini-playground-code-block',
@@ -43,7 +44,8 @@ import { delay, of, take, tap } from 'rxjs';
     CommonModule,
     RouterLink,
     LoadingComponent,
-    SyntaxCodeBlockComponent
+    SyntaxCodeBlockComponent,
+    IconComponent
   ],
   templateUrl: './mini-playground-code-block.component.html',
   styleUrl: './mini-playground-code-block.component.scss',

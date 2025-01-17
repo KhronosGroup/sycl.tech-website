@@ -18,12 +18,14 @@
 
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, HostListener, input, model, output } from '@angular/core';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-switch',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    IconComponent
   ],
   templateUrl: './switch.component.html',
   styleUrl: './switch.component.scss',

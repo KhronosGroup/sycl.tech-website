@@ -30,7 +30,7 @@
     } @else if (!embedUrl()) {
       <div class="warning">
         <div>
-          <span class="material-symbols-outlined">security</span>
+          <st-icon icon="security"></st-icon>
           <h1>Video Not Supported</h1>
           <p>Unfortunately, we cannot embed this video for you but you can view it on {{ videoProviderName() }}.</p>
         </div>
@@ -38,7 +38,7 @@
     } @else if (!cookiesEnabled()) {
       <div class="warning">
         <div>
-          <span class="material-symbols-outlined">security</span>
+          <st-icon icon="security"></st-icon>
           <h1>Video Blocked</h1>
           <p>To view this video inline, you need to accept our <a href="/cookies">Cookie Policy</a>.</p>
         </div>
@@ -46,7 +46,7 @@
     }
     <footer>
       <a class="button centered" [href]="video.url" target="_blank">
-        <span class="material-symbols-outlined">captive_portal</span> Watch Video on {{ videoProviderName() }}
+        <st-icon icon="captive_portal"></st-icon> Watch Video on {{ videoProviderName() }}
       </a>
     </footer>
   </main>

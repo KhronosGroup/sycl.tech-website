@@ -59,6 +59,7 @@ import {
   CalendarWidgetLayout,
   CalenderWidgetComponent
 } from '../calendar/shared/calendar-item-widget/calender-widget.component';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-changed',
@@ -72,7 +73,8 @@ import {
     ResearchWidgetComponent,
     QuickLinksComponent,
     LoadingComponent,
-    CalenderWidgetComponent
+    CalenderWidgetComponent,
+    IconComponent
   ],
   templateUrl: './changed.component.html',
   styleUrl: './changed.component.scss',

@@ -1,47 +1,46 @@
 :host {
+  --st-switch-width: 40px;
+  --st-switch-nib-size: 25px;
+  --st-switch-nib-icon-size: 15px;
+
   display: block;
   height: 10px;
-  width: 40px;
+  border-radius: 12px;
+  width: var(--st-switch-width);
   background-color: var(--color-control-hover);
   position: relative;
-  border-radius: 12px;
   cursor: pointer;
+  user-select: none;
   
-  div {
+  .container {
     display: flex;
 
-    > div {
-      padding: .5rem;
-    }
-    
     &.disabled {
       pointer-events: none;
       cursor: not-allowed;
     }
-  }
 
-  .nib {
-    background-color: var(--color-control-active);
-    color: var(--color-white);
-    height: 25px;
-    width: 25px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: var(--transition-fast);
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 1rem;
-    user-select: none;
+    .nib {
+      display: flex;
+      height: var(--st-switch-nib-size);
+      width: var(--st-switch-nib-size);
+      top: 50%;
+      background-color: var(--color-control-active);
+      border-radius: 100%;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transition: var(--transition-fast);
+      transform: translateY(-50%);
 
-    span {
-      font-size: 15px;
+      st-icon {
+        width: var(--st-switch-nib-icon-size);
+        color: var(--color-white);
+      }
+
+      &.on {
+        translate: 15px;
+      }
     }
-  }
-
-  .nib.on {
-    translate: 15px;
   }
 }

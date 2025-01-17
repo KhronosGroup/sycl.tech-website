@@ -51,6 +51,7 @@ import { SharePopupComponent } from './popups/share/share-popup.component';
 import { CompilerSelectorPopupComponent } from './popups/compiler-select/compiler-selector-popup.component';
 import { SafeStorageService } from '../../shared/services/safe-storage.service';
 import { AlertService } from '../../shared/services/alert.service';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-playground',
@@ -62,7 +63,8 @@ import { AlertService } from '../../shared/services/alert.service';
     MonacoEditorModule,
     MiniPanelComponent,
     AlertBubbleComponent,
-    NgOptimizedImage
+    NgOptimizedImage,
+    IconComponent
   ],
   templateUrl: './playground.component.html',
   styleUrl: './playground.component.scss',

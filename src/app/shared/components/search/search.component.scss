@@ -16,16 +16,14 @@ input {
   outline: none;
 }
 
-span {
+st-icon {
   position: absolute;
   left: .7rem;
   top: .8rem;
   transition: var(--transition-fast);
   color: var(--color-orange);
-}
-
-:host:hover i {
-  opacity: 1;
+  opacity: .4;
+  width: 24px;
 }
 
 :host-context(.dark-mode) input {

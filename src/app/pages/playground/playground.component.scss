@@ -74,10 +74,6 @@
           .head {
             background-color: red;
             color: white;
-
-            span {
-              color: white;
-            }
           }
         }
       }
@@ -142,11 +138,12 @@
           opacity: 1;
           background-color: var(--color-orange);
 
-          span {
+          st-icon {
             opacity: .6;
+            color: var(--color-white);
           }
 
-          &:hover span {
+          &:hover st-icon {
             opacity: 1;
           }
 
@@ -164,10 +161,12 @@
           opacity: 1;
         }
 
-        span {
-          font-size: 35px;
+        st-icon {
+          width: 35px;
+          height: 35px;
           transition: var(--transition-fast);
           cursor: pointer;
+          color: var(--color-white);
 
           &.run.building {
             opacity: 1;

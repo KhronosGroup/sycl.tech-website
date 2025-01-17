@@ -27,6 +27,7 @@ import { TagComponent } from '../tag/tag.component';
 import { PopupReference } from '../popup/popup.service';
 import { TruncatePipe } from '../../pipes/truncate.pipe';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-site-wide-search',
@@ -37,7 +38,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
     LoadingComponent,
     TagComponent,
     TruncatePipe,
-    NgOptimizedImage
+    NgOptimizedImage,
+    IconComponent
   ],
   templateUrl: './site-wide-search.component.html',
   styleUrl: './site-wide-search.component.scss',

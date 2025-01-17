@@ -34,6 +34,7 @@ import { SearchablePage } from '../../shared/components/site-wide-search/Searcha
 import { Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { UISearchFilter } from '../../shared/components/filter-result-layout/FilterManager';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-news',
@@ -46,6 +47,7 @@ import { UISearchFilter } from '../../shared/components/filter-result-layout/Fil
     LoadingComponent,
     ContributorAvatarComponent,
     NewsWidgetComponent,
+    IconComponent,
   ],
   templateUrl: './news.component.html',
   styleUrl: './news.component.scss',

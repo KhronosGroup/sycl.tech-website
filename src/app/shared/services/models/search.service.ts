@@ -164,7 +164,7 @@ export class SearchService {
             url: result.url,
             type: 'project',
             target: '_self',
-            icon: 'receipt_long'
+            icon: 'receipt'
           }
         })
       })

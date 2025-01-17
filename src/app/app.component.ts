@@ -39,6 +39,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { PlatformService } from './shared/services/platform.service';
 import { SafeStorageService } from './shared/services/safe-storage.service';
 import { AlertsComponent } from './shared/components/site-wide-alert/alerts.component';
+import { IconComponent } from './shared/components/icon/icon.component';
 
 @Component({
   selector: 'app-root',
@@ -52,7 +53,8 @@ import { AlertsComponent } from './shared/components/site-wide-alert/alerts.comp
     SearchComponent,
     CookieAcceptanceComponent,
     NgClass,
-    AlertsComponent
+    AlertsComponent,
+    IconComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

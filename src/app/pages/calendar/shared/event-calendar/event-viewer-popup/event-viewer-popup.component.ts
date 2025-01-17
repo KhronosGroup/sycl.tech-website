@@ -24,13 +24,17 @@ import {
 import { PopupReference } from '../../../../../shared/components/popup/popup.service';
 import { CalendarItemModel } from '../models/calendar-item.model';
 import { environment } from '../../../../../../environments/environment';
+import { IconComponent } from '../../../../../shared/components/icon/icon.component';
+import { TruncatePipe } from '../../../../../shared/pipes/truncate.pipe';
 
 @Component({
   selector: 'st-event-viewer-popup',
   standalone: true,
   imports: [
     CommonModule,
-    LayeredContributorAvatarsComponent
+    LayeredContributorAvatarsComponent,
+    IconComponent,
+    TruncatePipe
   ],
   templateUrl: './event-viewer-popup.component.html',
   styleUrls: [
