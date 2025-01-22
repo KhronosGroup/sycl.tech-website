@@ -8,17 +8,18 @@
         }
       </div>
       <div>
-        <h1 [innerHTML]="contributor.name"></h1>
+        <h1>{{ contributor.name }}</h1>
         <h2>{{ contributor.position }} at {{ contributor.affiliation }}</h2>
-        <div [innerHTML]="contributor.bio"></div>
+        <div>{{ contributor.bio }}</div>
       </div>
     </div>
     <div class="wrapper panel socials">
       @for (social of contributor.links; track social.name) {
         <a [href]="social.url" target="_blank" rel="noopener">
-          <img ngSrc="./assets/images/contributors/social-icons/{{ social.tag }}.svg"
+          <img class="social-image"
                height="800"
                width="800"
+               ngSrc="./assets/images/contributors/social-icons/{{ social.tag }}.svg"
                alt="{{ social.name }}"
                title="Visit {{ contributor.name }}'s {{ social.name }}"/>
         </a>
