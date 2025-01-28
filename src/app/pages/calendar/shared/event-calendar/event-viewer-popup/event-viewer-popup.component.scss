@@ -1,4 +1,5 @@
 :host {
+
   header {
     display: flex;
     flex-direction: column;
@@ -30,9 +31,10 @@
           display: grid;
           grid-template-columns: 50px 1fr;
 
-          span {
-            font-size: 30px !important;
+          st-icon {
+            width: 30px !important;
             opacity: .6;
+            color: var(--color-white);
           }
 
           > div {

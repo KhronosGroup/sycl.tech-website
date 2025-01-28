@@ -18,12 +18,14 @@
 
 import { CommonModule, TitleCasePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, input, model } from '@angular/core';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-tag',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    IconComponent
   ],
   templateUrl: './tag.component.html',
   styleUrl: './tag.component.scss',

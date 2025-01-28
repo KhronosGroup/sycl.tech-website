@@ -2,33 +2,33 @@
   <header>
     <div class="title">
       <div>
-        <span class="material-symbols-outlined popup-icon">calendar_month</span>
+        <st-icon class="popup-icon" icon="calendar_month"></st-icon>
       </div>
       <div>
-        <h1 [innerHTML]="calendarItem.event.title"></h1>
+        <h1 [innerHTML]="calendarItem.event.title | truncate: 70"></h1>
       </div>
     </div>
 
     <div class="overview">
       <ol class="details">
         <li title="Start Time">
-          <div><span class="material-symbols-outlined">play_circle</span></div>
+          <div><st-icon icon="play_circle"></st-icon></div>
           <div>{{ calendarItem.event.starts | date:'MMM d, y, h:mm a z' }}</div>
         </li>
         <li title="End Time">
-          <div><span class="material-symbols-outlined">stop_circle</span></div>
+          <div><st-icon icon="stop_circle"></st-icon></div>
           <div>{{ calendarItem.event.ends | date:'MMM d, y, h:mm a z' }}</div>
         </li>
         @if (calendarItem.event.location) {
           <li title="Location">
-            <div><span class="material-symbols-outlined">pin_drop</span></div>
+            <div><st-icon icon="pin_drop"></st-icon></div>
             <div>{{ calendarItem.event.location }}</div>
           </li>
         }
         @if (calendarItem.event.attendees; as attendees) {
           @if (calendarItem.event.attendees.length > 0) {
             <li title="SYCL.Tech Attendees">
-              <div><span class="material-symbols-outlined">people</span></div>
+              <div><st-icon icon="people"></st-icon></div>
               <div>
                 <st-layered-contributor-avatars
                     [contributors]="attendees"
@@ -42,9 +42,9 @@
         <a class="button" [href]="environment.github_content_repo_collection_base_url + '/events#note-attendance'"
            target="_blank"
            rel="noopener">
-          <span class="material-symbols-outlined">person_add</span>Note Your Attendance</a>
+          <st-icon icon="person_add"></st-icon>Note Your Attendance</a>
         <a class="button" [href]="calendarItem.event.url" target="_blank">
-          <span class="material-symbols-outlined">link</span>Visit Event Website
+          <st-icon icon="link"></st-icon>Visit Event Website
         </a>
       </div>
     </div>

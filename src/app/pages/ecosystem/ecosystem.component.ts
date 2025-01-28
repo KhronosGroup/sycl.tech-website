@@ -36,6 +36,7 @@ import { RouterLink } from '@angular/router';
 import { SearchablePage } from '../../shared/components/site-wide-search/SearchablePage';
 import { Meta, Title } from '@angular/platform-browser';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-ecosystem',
@@ -46,7 +47,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
     ProjectWidgetComponent,
     VideoWidgetComponent,
     ResearchWidgetComponent,
-    QuickLinksComponent
+    QuickLinksComponent,
+    IconComponent
   ],
   templateUrl: './ecosystem.component.html',
   styleUrl: './ecosystem.component.scss',

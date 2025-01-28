@@ -33,6 +33,7 @@ import { MultiDateComponent } from '../../../../../shared/components/multi-date/
 import { SafeStorageService } from '../../../../../shared/services/safe-storage.service';
 import { LoadingComponent } from '../../../../../shared/components/loading/loading.component';
 import { FilterManager, UITagGroup } from '../../../../../shared/components/filter-result-layout/FilterManager';
+import { IconComponent } from '../../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-video-view-popup',
@@ -45,7 +46,8 @@ import { FilterManager, UITagGroup } from '../../../../../shared/components/filt
     ContributorAvatarComponent,
     AsyncPipe,
     MultiDateComponent,
-    LoadingComponent
+    LoadingComponent,
+    IconComponent
   ],
   styleUrls: [
     '../../../../../shared/components/popup/layouts/widget.scss',

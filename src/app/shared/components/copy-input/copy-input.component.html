@@ -2,9 +2,9 @@
 
 <a (click)="onCopy()" class="button" title="Click to copy the contents to clipboard" [class]="{'copied': copied()}">
   @if (copied()) {
-    <span class="material-symbols-outlined copied">check_circle</span>
+    <st-icon icon="check_circle" class="copied"></st-icon>
   } @else {
-    <span class="material-symbols-outlined">content_copy</span>
+    <st-icon icon="content_copy"></st-icon>
   }
 
   {{ title() }}

@@ -31,6 +31,7 @@ import { NewsWidgetComponent, NewsWidgetLayout } from '../shared/news-widget/new
 import { catchError, Observable, of, switchMap, tap } from 'rxjs';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { FilterManager, UITagGroup } from '../../../shared/components/filter-result-layout/FilterManager';
+import { IconComponent } from '../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-news',
@@ -42,7 +43,8 @@ import { FilterManager, UITagGroup } from '../../../shared/components/filter-res
     LoadingComponent,
     TagComponent,
     NewsWidgetComponent,
-    RouterLink
+    RouterLink,
+    IconComponent
   ],
   templateUrl: './view.component.html',
   styleUrl: './view.component.scss',

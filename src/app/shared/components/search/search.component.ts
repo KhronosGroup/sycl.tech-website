@@ -18,12 +18,14 @@
 
 import { ChangeDetectionStrategy, Component, ElementRef, input, model, output, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-search',
   standalone: true,
   imports: [
-    FormsModule
+    FormsModule,
+    IconComponent
   ],
   templateUrl: './search.component.html',
   styleUrl: './search.component.scss',

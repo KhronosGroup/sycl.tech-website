@@ -22,13 +22,15 @@ import { SwitchComponent } from '../../shared/components/switch/switch.component
 import { Subscription, tap } from 'rxjs';
 import { Title } from '@angular/platform-browser';
 import { SafeStorageService } from '../../shared/services/safe-storage.service';
+import { IconComponent } from '../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-settings',
   standalone: true,
   imports: [
     CommonModule,
-    SwitchComponent
+    SwitchComponent,
+    IconComponent
   ],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.scss',

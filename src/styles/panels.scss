@@ -74,11 +74,14 @@
       }
     }
 
-    span.panel-icon {
-      font-size: 8rem;
+    .panel-icon {
+      width: 8rem;
+      height: 8rem;
+      --st-icon-color: var(--st-icon-color-white);
 
       @media screen and (min-width: $full-scale) {
-        font-size: 15rem;
+        width: 15rem;
+        height: 15rem;
       }
     }
   }

@@ -83,10 +83,11 @@ section#news {
           padding: 1.5rem 1rem;
         }
 
-        span {
+        st-icon {
+          display: inline;
           opacity: .6;
           margin-bottom: 1rem;
-          font-size: 30px;
+          width: 30px;
         }
       }
     }
@@ -104,10 +105,12 @@ section#news {
     font-size: 1rem;
     color: rgba(0, 0, 0, .3);
 
-    span {
-      font-size: 4rem;
+    st-icon {
+      width: 4rem;
+      height: 4rem;
       padding-bottom: 1rem;
       display: block;
+      opacity: .5;
     }
   }
 }

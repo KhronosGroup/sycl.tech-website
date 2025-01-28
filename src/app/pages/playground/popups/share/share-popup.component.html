@@ -1,6 +1,6 @@
 <header>
   <div>
-    <span class="material-symbols-outlined popup-icon">share</span>
+    <st-icon icon="share" class="popup-icon"></st-icon>
     <h1>Share Your Code</h1>
     <p>You can share your code sample with someone else by sending them the below playground link.</p>
   </div>
@@ -26,7 +26,7 @@
     } @else if (loading() == LoadingState.LOAD_FAILURE) {
       <div class="warning">
         <div>
-          <span class="material-symbols-outlined">error</span>
+          <st-icon icon="error"></st-icon>
           <h1>Error</h1>
           <p>There was a problem loading your shortened URL, please try again.</p>
         </div>
@@ -35,6 +35,6 @@
   </article>
   <footer>
     <a class="button" (click)="onClose()">
-      <span class="material-symbols-outlined">close</span> Close</a>
+      <st-icon icon="close"></st-icon> Close</a>
   </footer>
 </main>

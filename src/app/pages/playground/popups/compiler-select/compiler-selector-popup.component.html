@@ -1,6 +1,6 @@
 <header>
   <div>
-    <span class="material-symbols-outlined popup-icon">settings</span>
+    <st-icon icon="settings" class="popup-icon"></st-icon>
     <h1>Choose a SYCL Compiler</h1>
   </div>
 </header>
@@ -20,7 +20,7 @@
             @if (selectedCompiler(); as selectedCompiler) {
               @if (compiler.tag == selectedCompiler.tag) {
                 <div class="tick">
-                  <span class="material-symbols-outlined">check</span>
+                  <st-icon icon="check"></st-icon>
                 </div>
               }
             }

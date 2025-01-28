@@ -20,7 +20,7 @@
       color: var(--color-white);
     }
 
-    span {
+    st-icon {
       opacity: .2;
     }
 
@@ -28,7 +28,7 @@
       background-color: var(--color-control-active);
       color: var(--color-white);
 
-      .indicator span {
+      .indicator st-icon {
         opacity: 1;
       }
     }

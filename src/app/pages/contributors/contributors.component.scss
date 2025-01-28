@@ -1,30 +1,29 @@
-section#intro {
-  .panel {
-    overflow: hidden;
-  }
-}
-
 section#contributors {
   .list {
-    list-style: none;
-    padding: 0;
-    margin: 2rem 0 0 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
+    margin: 2rem 0 0 0;
+    padding: 0;
+    list-style: none;
 
-    a {
+    .contributor {
       display: block;
-      padding: 2rem 0;
-      text-align: center;
-      margin-bottom: .5rem;
-      cursor: pointer;
       flex-basis: calc(20% - 1rem);
-
+      padding: 2rem 0;
+      margin-bottom: .5rem;
+      text-align: center;
+      cursor: pointer;
       background-color: var(--color-hint-second);
       border-radius: var(--border-radius);
       transition: var(--transition-fast);
+
+      &:hover {
+        box-shadow: var(--box-shadow-focused);
+        transform: var(--transform-focused-slight);
+        background-color: var(--color-hint-first);
+      }
 
       st-contributor-avatar {
         width: 90px;
@@ -35,12 +34,6 @@ section#contributors {
         margin-top: 1rem;
         font-size: 1rem;
         font-weight: normal;
-      }
-
-      &:hover {
-        box-shadow: var(--box-shadow-focused);
-        transform: var(--transform-focused-slight);
-        background-color: var(--color-hint-first);
       }
     }
   }

@@ -17,12 +17,16 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-show-more',
   standalone: true,
   templateUrl: './show-more.component.html',
   styleUrl: './show-more.component.scss',
+  imports: [
+    IconComponent
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShowMoreComponent {

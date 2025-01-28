@@ -18,13 +18,15 @@
 
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { NgIf } from '@angular/common';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-alert-bubble',
   standalone: true,
   templateUrl: './alert-bubble.component.html',
   imports: [
-    NgIf
+    NgIf,
+    IconComponent
   ],
   styleUrl: './alert-bubble.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

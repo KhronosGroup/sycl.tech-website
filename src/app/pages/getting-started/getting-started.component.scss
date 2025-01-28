@@ -20,6 +20,8 @@ section#try {
  * Section: eBook
  */
 section#ebook {
+  --yello-color: #ffbc00;
+
   .panel {
     background-color: black;
     position: relative;
@@ -34,11 +36,11 @@ section#ebook {
     }
 
     h1 {
-      color: #ffbc00;
+      color: var(--yello-color);
     }
 
     .button {
-      background-color: #ffbc00;
+      background-color: var(--yello-color);
       color: var(--color-black);
     }
   }
@@ -138,18 +140,19 @@ section#download-compiler {
     border-radius: var(--border-radius);
     transition: var(--transition-fast);
 
-    span {
+    st-icon {
       margin: 2rem 0;
       transition: var(--transition-fast);
-      font-size: 100px;
+      height: 100px;
+      width: 100px;
     }
 
     &:hover {
       box-shadow: var(--box-shadow-focused);
       transform: var(--transform-focused);
 
-      span {
-        color: var(--color-orange)
+      st-icon {
+        color: var(--color-orange);
       }
     }
   }

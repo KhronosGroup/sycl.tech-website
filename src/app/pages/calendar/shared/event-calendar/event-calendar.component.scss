@@ -33,6 +33,10 @@
     display: flex;
     margin-top: 1rem;
 
+    st-icon {
+      height: 100%;
+    }
+
     st-loading {
       height: 100%;
       width: auto;
@@ -130,9 +134,9 @@
           transition: var(--transition-fast);
           box-shadow: var(--box-shadow-focused);
 
-          span {
+          st-icon {
             opacity: .7;
-            font-size: 18px;
+            width: 18px;
             vertical-align: middle;
           }
 

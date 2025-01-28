@@ -13,7 +13,7 @@
            width="998"/>
     </div>
     <div class="header mobile" (click)="onToggleLessonList()">
-      <span class="material-symbols-outlined">list</span>Show Lessons List
+      <st-icon icon="list"></st-icon>Show Lessons List
     </div>
     <ol class="lesson-list">
       @for (currentLesson of lessons(); track currentLesson.id) {
@@ -39,7 +39,7 @@
             <a [href]="currentLesson.github_homepage_url.replace('blob', 'edit')"
                title="Edit on GitHub" target="_blank"
                rel="noopener">
-              <span class="material-symbols-outlined">edit</span>
+              <st-icon icon="edit"></st-icon>
             </a>
           </div>
 
@@ -59,7 +59,7 @@
                     [ngModel]="currentLesson.source"></ngx-monaco-editor>
               }
               <a class="next" routerLink="/getting-started/academy/{{ currentLesson.tag }}/solution">
-                <span class="material-symbols-outlined">public</span> View the Solution
+                <st-icon icon="public"></st-icon> View the Solution
               </a>
             </st-tab>
           }

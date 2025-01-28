@@ -1,0 +1,18 @@
+:host {
+  --st-icon-src: '';
+
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: currentColor;
+  mask: var(--st-icon-src) no-repeat center / contain !important;
+  background-size: contain;
+
+  img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+  }
+}

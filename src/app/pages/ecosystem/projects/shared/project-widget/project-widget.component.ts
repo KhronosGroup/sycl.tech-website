@@ -26,6 +26,7 @@ import { TruncatePipe } from '../../../../../shared/pipes/truncate.pipe';
 import { ClipboardService } from 'ngx-clipboard';
 import { PopupService } from '../../../../../shared/components/popup/popup.service';
 import { ProjectViewPopupComponent } from './project-view-popup/project-view-popup.component';
+import { IconComponent } from '../../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-project-widget',
@@ -36,6 +37,7 @@ import { ProjectViewPopupComponent } from './project-view-popup/project-view-pop
     NgOptimizedImage,
     LayeredContributorAvatarsComponent,
     TruncatePipe,
+    IconComponent,
   ],
   styleUrl: './project-widget.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

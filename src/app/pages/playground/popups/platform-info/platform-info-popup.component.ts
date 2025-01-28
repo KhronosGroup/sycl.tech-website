@@ -18,6 +18,7 @@
 
 import { ChangeDetectionStrategy, Component, Inject, signal, Signal } from '@angular/core';
 import { PopupReference } from '../../../../shared/components/popup/popup.service';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-platform-info-popup',
@@ -26,6 +27,9 @@ import { PopupReference } from '../../../../shared/components/popup/popup.servic
   styleUrls: [
     '../../../../shared/components/popup/layouts/side-header.scss',
     './platform-info-popup.component.scss',
+  ],
+  imports: [
+    IconComponent
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

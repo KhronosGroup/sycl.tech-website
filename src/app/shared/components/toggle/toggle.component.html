@@ -3,7 +3,7 @@
     <div *ngFor="let button of buttons"
          [ngClass]="{'focused': button.selected}"
          (click)="onClick(button)">
-      <span class="material-symbols-outlined">{{ button.icon }}</span>
+      <st-icon [icon]="button.icon"></st-icon>
     </div>
   </div>
 }

@@ -1,11 +1,11 @@
 @if (message(); as message) {
   <div (click)="onClick()">
-    <span class="material-symbols-outlined">{{ icon() }}</span>
+    <st-icon [icon]="icon()"></st-icon>
   </div>
   <div [innerHTML]="message" (click)="onClick()"></div>
   @if (closable()) {
     <div (click)="onClose()">
-      <span class="material-symbols-outlined">cancel</span>
+      <st-icon icon="cancel"></st-icon>
     </div>
   }
 }

@@ -19,6 +19,7 @@
 import { ChangeDetectionStrategy, Component, Inject, signal, Signal, WritableSignal } from '@angular/core';
 import { DatePipe, NgOptimizedImage } from '@angular/common';
 import { PopupReference } from '../../../shared/components/popup/popup.service';
+import { IconComponent } from '../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-change-start-date',
@@ -26,7 +27,8 @@ import { PopupReference } from '../../../shared/components/popup/popup.service';
   templateUrl: './change-start-date.component.html',
   imports: [
     NgOptimizedImage,
-    DatePipe
+    DatePipe,
+    IconComponent
   ],
   styleUrls: [
     '../../../shared/components/popup/layouts/large-top-header.scss',

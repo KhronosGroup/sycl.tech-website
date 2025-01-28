@@ -23,6 +23,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import { PlatformService } from '../../../../shared/services/platform.service';
 import { SafeStorageService, State } from '../../../../shared/services/safe-storage.service';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-cookie-acceptance',
@@ -30,7 +31,8 @@ import { SafeStorageService, State } from '../../../../shared/services/safe-stor
   templateUrl: './cookie-acceptance.component.html',
   imports: [
     RouterLink,
-    AsyncPipe
+    AsyncPipe,
+    IconComponent
   ],
   styleUrl: './cookie-acceptance.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

@@ -19,6 +19,7 @@
 import { ChangeDetectionStrategy, Component, HostListener, input, signal, WritableSignal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
+import { IconComponent } from '../icon/icon.component';
 
 @Component({
   selector: 'st-multi-date',
@@ -27,7 +28,8 @@ import { DatePipe } from '@angular/common';
   styleUrl: './multi-date.component.scss',
   imports: [
     FormsModule,
-    DatePipe
+    DatePipe,
+    IconComponent
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

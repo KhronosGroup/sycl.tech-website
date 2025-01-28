@@ -86,8 +86,9 @@ section#intro {
         display: flex;
         align-items: center;
 
-        span {
-          font-size: 30px;
+        st-icon {
+          width: 30px;
+          height: 30px;
         }
       }
     }

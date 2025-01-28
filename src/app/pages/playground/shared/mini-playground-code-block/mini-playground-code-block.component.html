@@ -7,14 +7,14 @@
         [caretColor]="caretColor()"></st-syntax-code-block>
     <div>
       @if (sample) {
-        <span class="material-symbols-outlined"
-              title="Open sample in playground"
-              (click)="onOpenInPlayground()">sports_esports</span>
+        <st-icon title="Open sample in playground"
+                 icon="sports_esports"
+                 (click)="onOpenInPlayground()"></st-icon>
       }
       @if (state() === LoadingState.LOADING) {
         <st-loading></st-loading>
       } @else {
-        <span class="material-symbols-outlined" (click)="compile()">play_circle</span>
+        <st-icon icon="play_circle" (click)="compile()"></st-icon>
       }
     </div>
   </div>

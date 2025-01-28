@@ -9,7 +9,7 @@
       </header>
     </div>
     <div>
-      <span class="material-symbols-outlined panel-icon">groups</span>
+      <st-icon icon="groups" class="panel-icon"></st-icon>
     </div>
   </div>
 </section>
@@ -22,7 +22,7 @@
     </header>
     <div class="list">
       @for (contributor of contributors(); track contributor) {
-        <a routerLink="./{{ contributor.username }}">
+        <a class="contributor" routerLink="./{{ contributor.username }}">
           <st-contributor-avatar [contributor]="contributor"></st-contributor-avatar>
           <h1 [innerHTML]="contributor.name"></h1>
         </a>

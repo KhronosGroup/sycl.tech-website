@@ -1,13 +1,13 @@
 @if (focusedDate() == FocusedDate.SUBMITTED) {
   <div>
-    <span class="material-symbols-outlined">event_available</span>
+    <st-icon icon="event_available"></st-icon>
   </div>
   <div title="The date that this item was submitted to SYCL.tech">
     {{ submitted() | date: format() }}
   </div>
 } @else if (focusedDate() == FocusedDate.CREATED) {
   <div>
-    <span class="material-symbols-outlined">calendar_month</span>
+    <st-icon icon="calendar_month"></st-icon>
   </div>
   <div title="The date that this item was originally created">
     {{ created() | date: format() }}

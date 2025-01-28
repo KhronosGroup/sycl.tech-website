@@ -26,6 +26,7 @@ import { LoadingState } from '../../../../shared/LoadingState';
 import { tap } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { environment } from '../../../../../environments/environment';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-sample-chooser',
@@ -33,6 +34,7 @@ import { environment } from '../../../../../environments/environment';
   imports: [
     CommonModule,
     LoadingComponent,
+    IconComponent,
   ],
   templateUrl: './sample-chooser.component.html',
   styleUrls: [

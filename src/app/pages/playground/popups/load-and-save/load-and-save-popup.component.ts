@@ -23,6 +23,7 @@ import { take, tap } from 'rxjs';
 import { PopupReference } from '../../../../shared/components/popup/popup.service';
 import { RouterLink } from '@angular/router';
 import { SafeStorageService } from '../../../../shared/services/safe-storage.service';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-load-popup',
@@ -35,7 +36,8 @@ import { SafeStorageService } from '../../../../shared/services/safe-storage.ser
   imports: [
     LoadingComponent,
     DatePipe,
-    RouterLink
+    RouterLink,
+    IconComponent
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })

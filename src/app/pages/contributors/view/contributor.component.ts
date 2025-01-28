@@ -27,6 +27,7 @@ import { LoadingComponent } from '../../../shared/components/loading/loading.com
 import { LoadingState } from '../../../shared/LoadingState';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { tap } from 'rxjs';
+import { IconComponent } from '../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-contributors-view',
@@ -35,7 +36,8 @@ import { tap } from 'rxjs';
     CommonModule,
     ContributorAvatarComponent,
     LoadingComponent,
-    NgOptimizedImage
+    NgOptimizedImage,
+    IconComponent
   ],
   templateUrl: './contributor.component.html',
   styleUrl: './contributor.component.scss',

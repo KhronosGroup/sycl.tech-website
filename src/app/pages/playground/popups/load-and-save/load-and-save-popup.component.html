@@ -1,6 +1,6 @@
 <header>
   <div>
-    <span class="material-symbols-outlined popup-icon">save</span>
+    <st-icon icon="save" class="popup-icon"></st-icon>
     <h1>Save / Load Code</h1>
     <p>You can save and load code from your browser's local storage.</p>
   </div>
@@ -18,7 +18,7 @@
                 <h2>Saved code is {{ savedItem.code.length }} characters in length.</h2>
               </div>
               <div (click)="onDeleteSaved(savedItem)" title="Delete this saved item">
-                <span class="material-symbols-outlined">delete</span>
+                <st-icon icon="delete"></st-icon>
               </div>
             </li>
           }
@@ -26,7 +26,7 @@
       } @else {
         <div class="warning">
           <div>
-            <span class="material-symbols-outlined">save</span>
+            <st-icon icon="save"></st-icon>
             <h1>Nothing Saved</h1>
             <p>You have not yet saved any code samples.</p>
           </div>
@@ -35,7 +35,7 @@
     } @else {
       <div class="warning">
         <div>
-          <span class="material-symbols-outlined">block</span>
+          <st-icon icon="block"></st-icon>
           <h1>Storage / Cookies Disabled</h1>
           <p>To enable saving and loading of samples, please <a routerLink="/cookies/">accept the cookies/storage
             policy</a>.</p>
@@ -45,11 +45,11 @@
   </article>
   <footer>
     <a class="button cancel" (click)="onClose()">
-      <span class="material-symbols-outlined">close</span> Close</a>
+      <st-icon icon="close"></st-icon> Close</a>
 
     @if (storageEnabled()) {
       <a class="button" (click)="onSave()">
-        <span class="material-symbols-outlined">save</span> Save</a>
+        <st-icon icon="save"></st-icon> Save</a>
     }
   </footer>
 </main>

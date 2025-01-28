@@ -23,6 +23,7 @@ import { PinnedModel } from '../../../../shared/models/pinned.model';
 import { TruncatePipe } from '../../../../shared/pipes/truncate.pipe';
 import { LoadingComponent } from '../../../../shared/components/loading/loading.component';
 import { RouterLink } from '@angular/router';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
 @Component({
   selector: 'st-scrolling-panel',
@@ -31,7 +32,8 @@ import { RouterLink } from '@angular/router';
     CommonModule,
     TruncatePipe,
     LoadingComponent,
-    RouterLink
+    RouterLink,
+    IconComponent
   ],
   templateUrl: './scrolling-panel.component.html',
   styleUrls: [

@@ -1,6 +1,6 @@
 <div class="header">
   <a [href]="getPreviousUrl()" (click)="onPrevious($event)" title="Previous Month">
-    <span class="material-symbols-outlined">arrow_back</span>
+    <st-icon icon="arrow_back"></st-icon>
   </a>
   <div>
     @if (this.stateSignal() === LoadingState.LOADING) {
@@ -10,7 +10,7 @@
     }
   </div>
   <a [href]="getNextUrl()" (click)="onNext($event)" title="Next Month">
-    <span class="material-symbols-outlined">arrow_forward</span>
+    <st-icon icon="arrow_forward"></st-icon>
   </a>
 </div>
 
@@ -29,7 +29,7 @@
                 [ngClass]="getClass(day.date, event)">
               @if (event.startsOnDate(day.date)) {
                 <div>
-                  <span class="material-symbols-outlined">more_vert</span>
+                  <st-icon icon="more_vert"></st-icon>
                   {{ event.event.title | truncate:10 }}
                 </div>
               } @else {

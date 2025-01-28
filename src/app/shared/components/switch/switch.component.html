@@ -1,9 +1,9 @@
-<div [title]="title()" [ngClass]="{'disabled': !enabled()}">
+<div class="container" [title]="title()" [ngClass]="{'disabled': !enabled()}">
   <div class="nib" [ngClass]="{'on': checked()}">
     @if (checked()) {
-      <span class="material-symbols-outlined">{{ iconOn() }}</span>
+      <st-icon [icon]="iconOn()"></st-icon>
     } @else {
-      <span class="material-symbols-outlined">{{ iconOff() }}</span>
+      <st-icon [icon]="iconOff()"></st-icon>
     }
   </div>
 </div>
