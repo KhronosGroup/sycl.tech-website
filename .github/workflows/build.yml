@@ -39,6 +39,7 @@ jobs:
           name: routes
           path: routes.txt
 
+  # Generate a sitemap.xml and save to the src directory
   generate-sitemap:
     runs-on: ubuntu-latest
     steps:
