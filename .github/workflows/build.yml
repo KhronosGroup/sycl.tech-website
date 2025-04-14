@@ -39,6 +39,26 @@ jobs:
           name: routes
           path: routes.txt
 
+  # Generate a sitemap.xml and save to the src directory
+  generate-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
+      - name: Set up Python 3.11
+        uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install Dependencies
+        run: pip install -r ./scripts/routes/requirements.txt --require-hashes --no-deps
+      - name: Create Sitemap
+        run: python ./scripts/routes/sitemap.py "$SITE_URL" "routes.txt" > src/sitemap.xml
+      - name: Upload to GitHub Artifacts
+        uses: actions/upload-artifact@0b2256b8c012f0828dc542b3febcab082c67f72b
+        with:
+          name: sitemap
+          path: sitemap.xml
+
   # Build the Angular site
   build:
     needs: generate-routes
