@@ -2,5 +2,6 @@
 .angular
 node_modules
 .DS_Store
+.README-local.md
 dist
 src/environments/environment.development.ts

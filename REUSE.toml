@@ -1,0 +1,23 @@
+version = 1
+SPDX-PackageName = "sycl.tech-website"
+SPDX-PackageSupplier = "The Khronos Group, Inc <webservices@khronosgroup.org>"
+SPDX-PackageDownloadLocation = "https://github.com/KhronosGroup/sycl.tech-website"
+
+[[annotations]]
+path = [
+    "scripts/**",
+    "src/**",
+    ".github/**",
+    ".gitignore",
+    "*.json",
+    "*.ts",
+    "*.md",
+    "CNAME",
+    "*routes.txt"
+]
+precedence = "closest"
+SPDX-FileCopyrightText = [
+    "2016-2025 Codeplay Software Ltd.",
+    "2025 The Khronos Group, Inc."
+]
+SPDX-License-Identifier = "Apache-2.0"

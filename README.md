@@ -1,7 +1,7 @@
 # sycl.tech Website
 
-[![Scorecard supply-chain security](https://github.com/codeplaysoftware/sycl.tech-website/actions/workflows/scorecard.yml/badge.svg)](https://github.com/codeplaysoftware/sycl.tech-website/actions/workflows/scorecard.yml)
-[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/codeplaysoftware/sycl.tech-website/badge)](https://scorecard.dev/viewer/?uri=github.com/codeplaysoftware/sycl.tech-website)
+[![Scorecard supply-chain security](https://github.com/khronosgroup/sycl.tech-website/actions/workflows/scorecard.yml/badge.svg)](https://github.com/khronosgroup/sycl.tech-website/actions/workflows/scorecard.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/khronosgroup/sycl.tech-website/badge)](https://scorecard.dev/viewer/?uri=github.com/khronosgroup/sycl.tech-website)
 
 ## About The Project
 
@@ -61,7 +61,7 @@ We use Material and Roboto fonts within this repository. Licenses are available 
 
 ## Contact
 
-<dev-rel@codeplay.com>
+<webservices@khronosgroup.org>
 
 [sycl.tech-content-repo]: <https://sycl.tech> "SYCL.tech Content Repository"
 [angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white

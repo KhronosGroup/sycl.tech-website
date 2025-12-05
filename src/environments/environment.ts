@@ -1,6 +1,7 @@
 /*---------------------------------------------------------------------------------------------
  *
- *  Copyright (C) Codeplay Software Ltd.
+ *  Copyright (C) 2016-2025 Codeplay Software Ltd.
+ *  Copyright (C) 2025 The Khronos Group, Inc.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -18,15 +19,15 @@
 
 export const environment = {
   json_feed_base_url: 'https://feeds.sycl.tech',
-  github_front_end_url: 'https://github.com/codeplaysoftware/sycl.tech-website',
-  github_content_repo_collection_base_url: 'https://github.com/codeplaysoftware/sycl.tech-content/tree/main/content',
-  github_content_url: 'https://github.com/codeplaysoftware/sycl.tech-content',
+  github_front_end_url: 'https://github.com/khronosgroup/sycl.tech-website',
+  github_content_repo_collection_base_url: 'https://github.com/khronosgroup/sycl.tech-content/tree/main/content',
+  github_content_url: 'https://github.com/khronosgroup/sycl.tech-content',
   socials: {
-    github: 'https://github.com/KhronosGroup/Khronosdotorg/',
+    github: 'https://github.com/KhronosGroup/',
     discourse: 'https://www.khronos.org/sycl/',
     discord: 'https://discord.com/invite/FkGSFA3asN'
   },
-  privacy_policy_email: 'info@codeplay.com',
+  privacy_policy_email: 'privacy@khronosgroup.org',
   fathom_analytics_token: 'MMWGQHXZ',
 
   // A list of any storage keys/cookies that this site uses
