@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-You can report issue using the ["Report a Vulnerability"](https://github.com/codeplaysoftware/sycl.tech-website/security/advisories/new)
+You can report issue using the ["Report a Vulnerability"](https://github.com/khronosgroup/sycl.tech-website/security/advisories/new)
 tool.
 
-You can also email us directly at <dev-rel@codeplay.com>.
+Please see our security policy at https://www.khronos.org/.well-known/security.txt

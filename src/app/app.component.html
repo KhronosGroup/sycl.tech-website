@@ -22,12 +22,13 @@
           <div class="bar"></div>
         </div>
       </a>
+      <!--
       <a routerLink="calendar" routerLinkActive="active">
         <div>
           <st-icon icon="event"></st-icon>Calendar
           <div class="bar"></div>
         </div>
-      </a>
+      </a>-->
       <a routerLink="news" routerLinkActive="active">
         <div>
           <st-icon icon="newspaper"></st-icon>Updates
@@ -117,6 +118,7 @@
           </div>
         </a>
       </li>
+      <!--
       <li routerLinkActive="active">
         <a routerLink="calendar" (click)="onMobileMenuLinkClicked()">
           <div>
@@ -125,6 +127,7 @@
           </div>
         </a>
       </li>
+      -->
       <li routerLinkActive="active">
         <a routerLink="news" (click)="onMobileMenuLinkClicked()">
           <div>
@@ -158,9 +161,9 @@
           projects, news, events and more. If you have something to share, please do so using the buttons below. If
           you would like to help with the site, please get involved!</h2>
         <div class="buttons">
-          <a class="button" href="https://github.com/codeplaysoftware/sycl.tech-content" target="_blank" rel="noopener">
+          <a class="button" href="https://github.com/khronosgroup/sycl.tech-content" target="_blank" rel="noopener">
             <st-icon icon="edit"></st-icon>Contribute Content</a>
-          <a class="button" href="https://github.com/codeplaysoftware/sycl.tech-website" target="_blank" rel="noopener">
+          <a class="button" href="https://github.com/khronosgroup/sycl.tech-website" target="_blank" rel="noopener">
             <st-icon icon="edit"></st-icon>Edit Page</a>
         </div>
       </div>
@@ -168,7 +171,7 @@
         <h1>Network</h1>
         <ul class="link-list">
           <li><a href="https://www.khronos.org"
-                 target="_blank" rel="noopener">Khronos.org</a></li>
+                 target="_blank" rel="noopener">The Khronos Group</a></li>
           <li><a href="https://uxlfoundation.org"
                  target="_blank" rel="noopener">UXL Foundation</a></li>
           <li><a href="https://oneapi.io"
@@ -185,7 +188,7 @@
           <li><a routerLink="./contributors">Our Contributors</a></li>
           <li><a routerLink="./changed">What's Changed</a></li>
           <li><a routerLink="./cookies">Cookie Policy</a></li>
-          <li><a routerLink="./privacy">Privacy Policy</a></li>
+          <li><a href="https://www.khronos.org/legal/privacy">Privacy Policy</a></li>
           <li><a routerLink="./settings">Settings</a></li>
         </ul>
       </div>
@@ -194,7 +197,7 @@
   <div class="bottom">
     <div class="wrapper">
       <div>
-        &copy; Copyright {{ currentYear() }} SYCL.tech
+        &copy; The Khronos<sup>&reg;</sup> Group Inc. {{ currentYear() }}. All rights reserved.
       </div>
       <div>
         <ol class="socials">
