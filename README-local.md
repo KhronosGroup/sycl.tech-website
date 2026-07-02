@@ -1,2 +1,7 @@
+<!--
+SPDX-FileCopyrightText: 2026 The Khronos Group Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # Serve pages locally
 ng serve
