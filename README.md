@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2026 The Khronos Group Inc.
+SPDX-License-Identifier: Apache-2.0
+-->
+
 # sycl.tech Website
 
 [![Scorecard supply-chain security](https://github.com/khronosgroup/sycl.tech-website/actions/workflows/scorecard.yml/badge.svg)](https://github.com/khronosgroup/sycl.tech-website/actions/workflows/scorecard.yml)
